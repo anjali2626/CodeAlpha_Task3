@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Anjali Aravinthan | Portfolio</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #292929;
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+
+        .body-1 {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #3d3d3d;
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+        
+        .navbar {
+            margin-top: 10px;
+            background: #292929;
+            padding: 10px 20px;
+        }
+        
+        .navdiv {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: 200px;
+           
+        }
+
+        .logo a {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .logo img {
+            width: 160px;
+            height: 60px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+        }
+
+        li {
+            margin: 0 15px;
+            margin-right: 40px;
+            font-size: 20px;
+        }
+
+        li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav .contact {
+            background-color: rgb(255, 255, 254);
+            padding: 10px;
+            border-radius: 20px;
+            justify-content: space-around;
+            text-decoration: none;
+            color: #110864;
+            margin-right: 20px;
+            font-weight: bolder;
+            transition: color 0.3s;
+            font-size: 18px;
+        }
+        nav .contact:hover {
+            color: #110864;
+            background-color: rgb(138, 231, 252);
+        }
+
+        li a:hover {
+           color: rgb(108, 242, 249);
+        }
+        
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px;
+            background-color: #292929
+        }
+        .text-section {
+            max-width: 50%;
+            margin-left: 40px;
+        }
+        .text-section h1 {
+            font-size: 60px;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+        .text-section h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+        .text-section p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: #f5f5f5;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .buttons {
+            display: flex;
+            gap: 20px;
+        }
+        .buttons a {
+            text-decoration: none;
+            padding: 15px;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 22px;
+        }
+        .buttons .learn-more {
+            background-color: rgba(0, 255, 255, 0.8);
+            color: #000000;
+            border: 4px solid transparent;
+            box-shadow: 0 0 15px 2px rgba(0, 255, 255, 0.8);
+            margin-right: 30px;
+        }
+        .buttons img {
+            width: 50px;
+            height: 45px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 60%;
+            box-shadow: 0 0 15px 5px rgba(0, 255, 255, 0.8);
+        }
+        #lin {
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        #f {
+            width: 50px;
+            height: 48px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .buttons .learn-more:hover {
+            transform: scale(1.05);
+            background-color: white;
+            color: #000000;
+        }
+        .buttons img:hover {
+            transform: scale(1.08);
+        }
+        .image-section img {
+            max-width: 350px;
+            border-radius: 50%;
+            margin-right: 80px;
+            box-shadow: 0 0 15px 6px rgba(0, 255, 255, 0.8);
+        }
+        .image-section img:hover {
+            transform: scale(1.05);
+        }
+        .header {
+            display: flex;
+            width: 100%;
+            margin-top: 70px;
+            margin-right: 70px;
+            margin-left: 90px;
+            gap: 70px;
+            align-items: center;
+            text-align: center;
+        }
+        .header-section {
+            display: grid;
+            width: 400px;
+            gap: 5px;
+            text-align: center;
+            align-items: center;
+            background-color: #ededed23;
+            border-radius: 30px;
+        }
+        .header-section:hover {
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+        .header-section img {
+            margin-top: 20px;
+            width: 150px;
+            margin-left: 125px;
+        }
+        .header-section h2 {
+            font-size: 25px;
+            color: #ffffff;
+        }
+        .header-section p {
+            margin-left: 20px;
+            margin-right: 20px;
+            font-size: 18px;
+            color: #ffffff;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .container-2 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px;
+            background-color: #3d3d3d;
+        }
+        .text-section-2 {
+            max-width: 50%;
+            
+        }
+        .text-section-2 h1 {
+            font-size: 60px;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+        .text-section-2 h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+        .text-section-2 p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: #f5f5f5;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .image-section-2 img {
+            max-width: 350px;
+            border-radius: 50%;
+            margin-left: 80px;
+            border: 2px solid transparent;
+            box-shadow: 0 0 15px 8px rgba(0, 255, 255, 0.8);
+        }
+        .image-section-2 img:hover {
+            transform: scale(1.05);
+        }
+        .container-3 {
+            display: flex;
+            width: 100%;
+            margin-left: 70px;
+            gap: 20px;
+            align-items: center;
+        }
+        .grid-container {
+            display: grid;
+            width: 700px;
+            text-align: left;
+            border-left: 2px solid rgb(255, 255, 255);
+            padding-left: 30px;
+        }
+        .grid-container h1 {
+            font-size: 40px;
+            color: white;
+        }
+        .grid-container h2 {
+            font-size: 30px;
+            color: rgba(102, 255, 255, 0.958);
+        }
+        #header {
+            font-size: 30px;
+            color: rgba(102, 255, 255, 0.958);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .grid-container p {
+            font-size: 25px;
+            color: rgb(181, 181, 181);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .header-2 {
+            display: flex;
+            width: 100%;
+            margin-top: 70px;
+            margin-right: 70px;
+            margin-left: 90px;
+            gap: 70px;
+            align-items: center;
+            text-align: center;
+        }
+        h1 {
+            font-size: 60px;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+        .header-section-2 {
+            display: grid;
+            width: 400px;
+            gap: 5px;
+            text-align: center;
+            align-items: center;
+            background-color: #ededed23;
+            border-radius: 30px;
+        }
+        .header-section-2:hover {
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+        .header-section-2 h2 {
+            font-size: 25px;
+            color: #ffffff;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        .header-section-2 a {
+            font-size: 18px;
+            color: rgba(0, 255, 255, 0.8);
+            text-decoration: none;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+        .header-section-2 a:hover {
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .header-section-2 p {
+            margin-left: 20px;
+            margin-right: 20px;
+            font-size: 18px;
+            color: #ffffff;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .services {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+        .service {
+            border-left: 2px solid rgb(255, 255, 255);
+            padding-left: 30px;
+            width: 200px;
+        }
+        .service h2 {
+            margin: 0;
+            font-size: 30px;
+            color: white;
+        }
+        .service h3 {
+            margin: 10px 0;
+            font-size: 25px;
+            color: white;
+        }
+        .service p {
+            margin: 0;
+            font-size: 18px;
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        input[type=text], input[type=email], textarea {
+            width: 100%;
+            padding: 12px 0;
+            border: none;
+            outline: none;
+            font-weight: bold;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: none;
+            background-color: transparent;
+            border-bottom: 2px solid #ffffff;
+            color: white;
+            font-size: 15px;
+        }
+        input[type=text]:focus, input[type=text]:active {
+            background: transparent;
+        }
+        .container-4 {
+            margin-top: 40px;
+            margin-left: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+            width: 1000px;
+        }
+        .forms {
+            background-color: #ededed23;
+            padding: 4%;
+            width: 50%;
+            height: 100%;
+            color: white;
+        }
+        .info {
+            border-left: 6px solid rgb(255, 255, 255);
+            padding-left: 40px;
+            width: 50%;
+            height: 100%;
+            background-color: #ededed23;
+            padding: 4%;
+        }
+        .info .header-3 {
+            height: 20%;
+            width: 100%;
+            font-size: 25px;
+            color: rgb(255, 255, 255);
+            margin-top: 10px;
+        }
+        .info .header-3 p{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 22px;
+            color: rgb(255, 255, 255);
+        }
+        .info.body {
+            height: 70%;
+            width: 100%;
+        }
+        .info img {
+            width: 30px;
+            height: 30px ;
+            box-shadow: 0 0 15px 8px rgba(0, 255, 255, 0.8);
+            border-radius: 50%;
+        }
+        #submit {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: rgba(0, 255, 255, 0.8);
+            color: #000000;
+            font-size: 20px;
+            border: 4px solid transparent;
+            box-shadow: 0 0 15px 1px rgba(0, 255, 255, 0.8);
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+        }
+        #submit:hover {
+            transform: scale(1.05);
+            background-color: white;
+            color: #000000;
+        }
+        .body ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        .body ul li {
+            margin: 4% 0;
+            color: black;
+        }
+        .list {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            font-size: 20px;
+            color: black;
+        }
+        .list img {
+            margin-right: 5%;
+            background-color: transparent;
+            padding: 1%;
+            width: 50px;
+            height: 50px;
+            border: 1px solid balck;
+        }
+        .list-1 img {
+            margin-left: 300px;
+            margin-top: 60px;
+            background-color: transparent;
+            width: 100px;
+            height: 50px;
+            border: none;
+            box-shadow: none;
+            border-radius: 0;
+        }
+        .text a {
+            color: rgb(157, 239, 255);
+        }
+        .text a:hover {
+            color: white;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background: #161616;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+            color: white;
+            font-size: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+   
+        <nav class="navbar">
+            <div class="navdiv">
+                <div class="logo">
+                    <a href="Portfolio1.html"><img src="11.png" alt="Logo"></a>
+                </div>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#services">Services</a></li>
+                </ul>
+                <a href="#contact" class="contact">Contact Me</a><br> 
+            </div>
+        </nav>
+
+        <br><br>
+        <div class="container">
+            <div class="text-section">
+                <h1>Anjali Aravinthan</h1>
+                <h2>Software Engineering Student | Web Developer</h2>
+                <p>I am an enthusiastic software engineering student passionate about developing innovative solutions and continuously expanding my technical expertise. With a strong foundation in programming, full-stack development, and database management, I thrive on problem-solving and creating impactful applications that enhance user experiences. Driven by curiosity and a commitment to growth, I am eager to collaborate on meaningful projects that contribute to the digital world.</p>
+                <br>
+                <div class="buttons">
+                    <a href="#contact" class="learn-more">Contact Me</a>
+                    <img src="in.png" id="lin">
+                    <img src="gm.png">
+                    <img src="ff.png" id="f">
+                </div>
+            </div>
+            <div class="image-section">
+                <img src="1234.png" alt="Team celebrating">
+            </div>
+        </div>
+
+        <div class="header">
+            <div class="header-section" a href="#about">
+                <img src="111.png">
+                <h2>About Me</h2>
+                <p>A passionate undergraduate software engineering student with a keen interest in building innovative and efficient software solutions. Enthusiastic about learning emerging technologies and solving real-world challenges through coding and development.</p>
+            </div>
+            <div class="header-section">
+                <img src="222.png">
+                <h2>My Projects</h2>
+                <p>From crafting dynamic websites to developing full-stack applications, I have worked on various projects that showcase my technical skills and creativity. Explore my portfolio to see how I bring ideas to life through software engineering.</p>
+            </div>
+            <div class="header-section">
+                <img src="333.png">
+                <h2>Services</h2>
+                <p>I develop user-friendly and visually appealing web applications, integrating frontend and backend functionalities for seamless performance. My expertise includes HTML, CSS, JavaScript, full-stack development, database optimization, and WordPress customization.</p>
+            </div>
+        </div>
+
+        <br><br><br><br>
+
+        <div class="body-1">
+            <div class="container-2"  id="about">
+            <div class="image-section-2">
+                <img src="123.png" alt="Team celebrating">
+            </div>
+            <div class="text-section-2">
+                <h1>About <span style="color: rgba(0, 255, 255, 0.8);">Me</span></h1>
+                <h2>Software Engineering Student</h2>
+                <p>I am an aspiring software engineer with a passion for developing innovative and efficient digital solutions. Driven by a curiosity for technology and a dedication to continuous learning, I aim to contribute to impactful projects that enhance user experiences. My goal is to work in an organization that fosters growth, allowing me to refine my skills while making meaningful contributions.</p>
+                <br>
+                <div class="buttons">
+                    <a href="#contact" class="learn-more">Contact Me</a>
+                </div>
+            </div>
+        </div>
+
+        <br><br><br>
+
+        <div class="container-3">
+            <div class="grid-container">
+                <h1>Education & Certificates</h1>
+                <p>I am currently pursuing my BSc (Hons) in Software Engineering at ICBT Campus, where I am gaining hands-on experience in programming, full-stack development, and database management. </p>
+                <br>
+                <p><span style="color: rgba(0, 255, 255, 0.8); font-size: 30px;">BSc (Hons) in Software Engineering</span><br>
+                International College of Business and Technology<br><i>May 2024 - May 2027</i>
+                </p>
+
+                <p><span style="color: rgba(0, 255, 255, 0.8); font-size: 30px;">Diploma in Information Technology</span><br>
+                International College of Business and Technology<br><i>June 2023 - December 2023</i>
+                </p>
+
+                <p><span style="color: rgba(0, 255, 255, 0.8); font-size: 30px;">Certificate in Information Technology</span><br>
+                International College of Business and Technology<br><i>August 2024</i>
+                </p>
+            </div>
+            <div class="grid-container">
+                <h1>Skills</h1>
+                <br>
+                <p><span style="color: rgba(0, 255, 255, 0.8); font-size: 30px;">Programming Languages</span><br>
+                Java, HTML, CSS, JavaScript, PHP – developing clean, scalable, and efficient code.</p>
+
+                <p><span style="color: rgba(0, 255, 255, 0.8); font-size: 30px;">Development Tools</span><br>
+                VS Code, Eclipse, WordPress – working with industry-standard platforms for seamless software development.</p>
+
+                <p><span style="color: rgba(0, 255, 255, 0.8); font-size: 30px;">Databases</span><br>
+                MySQL – designing and managing optimized database structures <br> for secure data storage.</p>
+
+                <p><span style="color: rgba(0, 255, 255, 0.8); font-size: 30px;">Web Hosting Software</span><br>
+                Hostinger – deploying and maintaining dynamic websites with reliable hosting solutions.</p>
+            </div>
+        </div>
+        <br><br>
+        </div>
+
+        <br><br>
+
+        <center><h1 id="projects">My<span style="color: rgba(0, 255, 255, 0.8); font-size: 60px; text-align: center;"> Projects</span></h1></center>
+        <div class="header-2">
+            <div class="header-section-2">
+                <h2>Home Tech Services Company Website (WordPress)</h2>
+                <p>Designed and developed a professional company website for Home Tech Services using WordPress and hosted on Hostinger. Integrated service descriptions, contact forms, and responsive layouts for a seamless user experience.</p>
+                <a href="https://hometechservice.ca/" target="_blank">View Project</a>
+            </div>
+            <div class="header-section-2">
+                <h2>Zoological Park Community Management System (Full Stack Web Application)</h2>
+                <p>Developed a full-stack web application with dedicated admin and member dashboards. Streamlined community activities and event management with an intuitive interface. Designed a responsive layout for seamless accessibility across all devices. Enhanced user engagement and efficiency through optimized functionality</p>
+            </div>
+            <div class="header-section-2">
+                <h2>Café Management System (Java Application)</h2>
+                <p>Designed a robust café management system in Java with an intuitive, menu-driven interface. Streamlined order processing, inventory tracking, and customer interactions for efficiency. Ensured an error-free experience with smooth navigation and clear messaging. Delivered a reliable and user-friendly solution for seamless café operations.</p>
+            </div>
+        </div>
+
+        <br><br><br>
+
+    <div class="body-1">
+            <br><br>
+            <center><h1>My<span style="color: rgba(0, 255, 255, 0.8); font-size: 60px; text-align: center;"> Services</span></h1></center>
+    <div class="services" id="services">
+        <div class="service">
+            <h2>01</h2>
+            <h3>Frontend Development</h3>
+            <p>Crafting visually appealing and interactive interfaces using HTML, CSS, and JavaScript.</p>
+        </div>
+        <div class="service">
+            <h2>02</h2>
+            <h3>Full-Stack Development</h3>
+            <p>Building complete web solutions with frontend and backend integration using modern frameworks.</p>
+        </div>
+        <div class="service">
+            <h2>03</h2>
+            <h3>Database Management</h3>
+            <p>Designing and optimizing databases with MySQL for scalable and secure data handling.</p>
+        </div>
+        <div class="service">
+            <h2>04</h2>
+            <h3>WordPress Development</h3>
+            <p>Creating custom WordPress sites with tailored themes and functionality.</p>
+        </div>
+    </div>
+    <br><br><br>
+    </div>
+    <br><br>
+
+    <center><h1>Contact<span style="color: rgba(0, 255, 255, 0.8); font-size: 60px; text-align: center;"> Me</span></h1></center>
+    <br><br>
+    <div class="container-4" id="contact">
+        <div class="forms">
+            <h2 style="margin-bottom: 5%; font-size: 40px; margin-top: 10px;">Send Me a message</h2>
+            <form id="contactForm">
+                <input type="text" name="name" placeholder="Name">
+                <input type="email" name="email" placeholder="Email">
+                <input type="text" name="subject" placeholder="Subject">
+                <textarea name="message" placeholder="Message..." style="height: 14vh;"></textarea>
+                <button type="submit" id="submit">Send</button>
+            </form>
+
+        </div>
+        <div class="info">
+            <div class="header-3">
+                <h1 style="margin-bottom: 5%; font-size: 40px; margin-top: 10px;">Contact Me</h2>
+                <p>We are open for comision, just message us below.</p>
+            </div>
+            <br>
+            <div class="body">
+                <ul>
+                    <li>
+                        <div class="list">
+                            <img src="gm.png">
+                            <div class="text"><span style="color: rgb(255, 255, 255);">Email: </span><a href="">anjaliaravinthan6@gmail.com</a></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="list">
+                            <img src="Picture3.png">
+                            <div class="text"><span style="color: rgb(255, 255, 255);">Phone: </span><a href="#">+94 77 833 1587</a></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="list-1">
+                            <img src="11.png">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        function validateEmail(email) {
+            const re = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            return re.test(email);
+        }
+
+        function validateForm() {
+            const name = document.querySelector('input[name="name"]').value;
+            const email = document.querySelector('input[name="email"]').value;
+            const subject = document.querySelector('input[name="subject"]').value;
+            const message = document.querySelector('textarea[name="message"]').value;
+
+            if (!name || !email || !subject || !message) {
+                alert('Please fill all the fields');
+                return false;
+            }
+
+            if (!validateEmail(email)) {
+                alert('Please enter a valid email address');
+                return false;
+            }
+            return true;
+        }
+
+        document.querySelector('button').addEventListener('click', function(event) {
+            event.preventDefault();
+
+            if (validateForm()) {
+                alert('Email sent successfully');
+                location("Portfolio1.html");
+            }
+        });
+
+    </script>
+    
+    <br><br><br><br><br><br>
+
+    <footer class="footer">
+    <p>Anjali Aravinthan | Portfolio  &copy;  2025 All Rights Reserved.</p>
+    </footer>
+        
+</body>
+</html>
